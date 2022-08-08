@@ -28,15 +28,13 @@
   StorageB.display();
   
   // -------NAV--------
-  
- 
+   
   
   listBtn.addEventListener('click',(e)=>{
     listBox.style.display = 'flex';
     addBox.style.display = 'none'; 
     contactBox.style.display = 'none'
-  } )
-  
+  } )  
   
   addBtn.addEventListener('click',(e)=>{
       listBox.style.display = 'none';
