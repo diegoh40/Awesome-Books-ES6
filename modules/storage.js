@@ -1,8 +1,8 @@
 export default class StorageB {
-    static storage(ok) {
-      window.localStorage.setItem('localBooks', JSON.stringify(ok));
-    }
-  
+  static storage(ok) {
+    window.localStorage.setItem('localBooks', JSON.stringify(ok));
+  }
+
     static getBooks = () => {
       let books = [
         {
@@ -18,9 +18,9 @@ export default class StorageB {
         this.storage(books);
       }
       books = JSON.parse(window.localStorage.getItem('localBooks'));
-      return books
+      return books;
     }
-  
+
     static display() {
       const bookList = document.querySelector('.books-display');
       let displ = '';
@@ -38,13 +38,13 @@ export default class StorageB {
       });
       bookList.innerHTML = displ;
     }
-  
+
     static addBook(boki) {
-      const books = this.getBooks()
+      const books = this.getBooks();
       const reciTi = document.getElementById('recibe-ti').value;
       const reciAu = document.getElementById('recibe-au').value;
-      //const booker = new Books()
-      //console.log('hola');
+      // const booker = new Books()
+      // console.log('hola');
       if (reciTi !== '' && reciAu !== '') {
         boki = {
           titulo: reciTi,
@@ -55,12 +55,11 @@ export default class StorageB {
         this.display();
       }
     }
-  
+
     static deleteBook(evento) {
-      let books = this.getBooks()
+      let books = this.getBooks();
       books = books.filter((el, index) => evento.target.id !== index.toString());
       this.storage(books);
       this.display();
     }
-  
-  }
+}
