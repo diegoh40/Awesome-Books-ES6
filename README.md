@@ -2,6 +2,8 @@
 
 # Awesome Books project
 > Setup the books page with Add, Remove, Date functions imlpemented with ES6 modules.
+![image](https://user-images.githubusercontent.com/92118813/185175702-a2c77463-f69c-41cd-9a51-105d419f06e6.png)
+
 
 ## Built With
 
