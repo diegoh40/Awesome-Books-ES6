@@ -14,7 +14,7 @@
 
 ## Online Version Link
 This project is available online through the following links.
-http://books.nduatikagiri.co.ke
+ https://diegoh40.github.io/Awesome-Books-ES6/
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
